@@ -1,0 +1,322 @@
+#thought__buble {
+    z-index: 0;
+    position: absolute;
+    height: 120px;
+    width: 120px;
+}
+
+#first-circle {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: var(--hair-color);
+    top: 78%;
+    left: 80%;
+    opacity: 100%;
+    animation: appearing 6s 1;
+
+}
+
+#second-circle {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: var(--hair-color);
+    top: 60%;
+    left: 65%;
+    opacity: 100%;
+    animation: appearing 6s 1.5s 1;
+}
+#main-thought {
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: var(--hair-color);
+    top: 15%;
+    left: 15%;
+    opacity: 100%;
+    animation: appearing 6s 3s 1;
+}
+
+#talking {
+    display: none;
+    color: var(--main-color);
+    font-size: 10px;
+    font-weight: 500;
+    z-index: 1;
+    position: relative;
+    height: 10px;
+    width: 80%;
+    top: 5%;
+    left: 10%;
+    opacity: 100%;
+
+    & strong {
+        color: var(--clothes-color);
+        font-weight: 600;
+    }
+}
+#thinking {
+    z-index: 1;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: var(--main-color);
+    top: 30%;
+    left: 15%;
+    animation: appearing 4.5s infinite;
+
+
+    &::after {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        border-radius: 100%;
+        background-color: var(--main-color);
+        top: 0%;
+        left: 200%;
+        opacity: 100%;
+        animation: appearing 2s 4.5s infinite;
+
+    }
+
+    &::before {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        border-radius: 100%;
+        background-color: var(--main-color);
+        top: 0%;
+        left: 400%;
+        opacity: 100%;
+        animation: appearing 3s 4.5s infinite;
+
+    }
+}
+
+#wrong {
+    z-index: 1;
+    position: absolute;
+    height: 10px;
+    width: 40px;
+    rotate: 45deg;
+    background-color: red;
+    top: 30%;
+    left: 20%;
+    opacity: 0%;
+
+    &::after {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        height: 10px;
+        width: 40px;
+        rotate: 270deg;
+        background-color: red;
+        top: -15%;
+        left: 5%;
+        opacity: 100%;
+    }
+}
+
+#right {
+    position: absolute;
+    background-color: transparent;
+    left: 150%;
+    width: 75px;
+    height: 50px;
+    perspective: 50px;
+    display: none;
+}
+
+.first-triangle {
+    z-index: 10;
+    position: absolute;
+    width: 0;
+    height: 0;
+    rotate: 180deg;
+    border: 15px solid transparent;
+    border-top: 0;
+    top: -21%;
+    left: 20%;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 50%;
+    border-radius: 0%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top: 20px solid var(--hair-color);
+    
+}
+.second-triangle {
+    z-index: 10;
+    position: absolute;
+    width: 0;
+    height: 0;
+    rotate: 180deg;
+    border: 15px solid transparent;
+    border-top: 0;
+    top: 20%;
+    left: 0%;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 50%;
+    border-radius: 0%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top: 20px solid var(--hair-color);
+}
+.third-triangle {
+    z-index: 10;
+    position: absolute;
+    width: 0;
+    height: 0;
+    rotate: 180deg;
+    border: 15px solid transparent;
+    border-top: 0;
+    top: 20%;
+    left: 40%;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 50%;
+    border-radius: 0%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top: 20px solid var(--hair-color);
+}
+
+#lightnight1 {
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    rotate: 135deg;
+    width: 1px;
+    height: 20px;
+    background-color: var(--effect-color);
+    animation: lightining 0.5s infinite;
+}
+#lightnight2 {
+    position: absolute;
+    top: -10%;
+    left: 70%;
+    rotate: 45deg;
+    width: 1px;
+    height: 20px;
+    background-color: var(--effect-color);
+    animation: lightining2 0.7s infinite;
+
+}
+
+#lightnight3 {
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    rotate: 110deg;
+    width: 1px;
+    height: 20px;
+    background-color: var(--effect-color);
+    animation: lightining3 0.9s infinite;
+
+}
+
+#lightnight4 {
+    position: absolute;
+    top: 90%;
+    left: -5%;
+    rotate: 65deg;
+    width: 1px;
+    height: 20px;
+    background-color: var(--effect-color);
+    animation: lightining4 0.5s infinite;
+}
+#lightnight5 {
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    rotate: 125deg;
+    width: 1px;
+    height: 20px;
+    background-color: var(--effect-color);
+    animation: lightining5 0.9s infinite;
+}
+#lightnight6 {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    rotate: 65deg;
+    width: 1px;
+    height: 20px;
+    background-color: var(--effect-color);
+    animation: lightining6 0.5s infinite;
+}
+
+#clouds-up {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--hair-color);
+    top: -25%;
+    left: 25%;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: var(--hair-color);
+        top: 10%;
+        left: -60%;
+    }
+
+    
+    &::after {
+        content: '';
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: var(--hair-color);
+        top: 10%;
+        left: 60%;
+    }
+}
+
+#clouds-down {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--hair-color);
+    top: 20%;
+    left: 25%;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: var(--hair-color);
+        top: -5%;
+        left: -60%;
+    }
+
+    
+    &::after {
+        content: '';
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: var(--hair-color);
+        top: -5%;
+        left: 60%;
+    }
+}
