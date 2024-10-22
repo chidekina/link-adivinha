@@ -17,7 +17,7 @@ number.addEventListener('keypress', (event) => {
 
     if (event.key == 'Enter')
         if (numberGuess == chosenNumber && yourGuesses.length < 5) {
-            link__container_number.innerHTML = `<h1>Parabens! O número <strong>${numberGuess}</strong> esta certo</h1>`;
+            link__container_number.innerHTML = `<h1>Parabens! O número <strong>${numberGuess}</strong> esta certo</h1><strong><a href='index.html'>Tente Outra vez!</a></strong>`;
             leftEyebrow.style.rotate = '10deg';
             rightEyebrow.style.rotate = '-10deg';
             link__mouth.style.backgroundColor = 'var(--eye-brow-color)';
@@ -83,7 +83,7 @@ number.addEventListener('keypress', (event) => {
             yourGuesses.push(numberGuess);
             guesses.innerHTML = yourGuesses;
             number.value = '';
-            link__container_number.innerHTML = `<h1>Suas chances acabaram. <strong>Tente Outra vez!</strong></h1>`;
+            link__container_number.innerHTML = `<h1>Suas chances acabaram. <strong><a href='index.html'>Tente Outra vez!</a></strong></h1>`;
             number.disabled = true;
             leftEyebrow.style.rotate = '-15deg';
             rightEyebrow.style.rotate = '15deg';

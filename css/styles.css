@@ -53,6 +53,20 @@ body {
     }
 }
 
+#link__container_number {
+    & a {
+        text-decoration: none;
+        color: var(--text-color);
+
+        &:hover {
+            text-decoration: underline;
+        }
+        &:visited {
+            color: var(--text-color);
+        }
+    }
+}
+
 #result {
     display: flex;
     flex-direction: column;
