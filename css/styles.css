@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url(link.css);
 @import url(thought-bubble.css);
+
 :root {
     --main-font: "Roboto", sans-serif;
     --background-color: rgb(222, 85, 64);
@@ -16,7 +17,7 @@
 }
 
 body {
-    
+
     background-image: url(/imgs/background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,8 +30,7 @@ body {
 }
 
 #main__container {
-    background-image: linear-gradient(to right bottom, #37a04a, #6db348, #9dc448, #ced44d, #ffe359);
-    display: grid;
+    background-image: linear-gradient(to right top, #37a04a, #6db348, #89b135, #ffe359);
     height: 500px;
     width: 442px;
     background-color: #ffff;
@@ -66,6 +66,7 @@ body {
         &:hover {
             text-decoration: underline;
         }
+
         &:visited {
             color: var(--text-color);
         }
@@ -96,6 +97,7 @@ body {
     & h4 {
         font-weight: 500;
     }
+
     & h5 {
         color: var(--text-color);
         font-size: 20px;
