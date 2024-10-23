@@ -36,6 +36,7 @@ body {
     background-color: #ffff;
     padding: 36px 0px 36px 16px;
     flex-direction: column;
+    border-radius: 10%;
 
 }
 
@@ -52,6 +53,20 @@ body {
         font-size: 28px;
 
         & strong {
+            color: var(--text-color);
+        }
+    }
+}
+
+#link__container_number {
+    & a {
+        text-decoration: none;
+        color: var(--text-color);
+
+        &:hover {
+            text-decoration: underline;
+        }
+        &:visited {
             color: var(--text-color);
         }
     }
