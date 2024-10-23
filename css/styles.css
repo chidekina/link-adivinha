@@ -3,7 +3,7 @@
 @import url(thought-bubble.css);
 :root {
     --main-font: "Roboto", sans-serif;
-    --background-color: #DE5540;
+    --background-color: rgb(222, 85, 64);
     --text-color: #FFB431;
 }
 
@@ -16,6 +16,10 @@
 }
 
 body {
+    
+    background-image: url(/imgs/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     background-color: var(--background-color);
     font-family: var(--main-font);
@@ -25,8 +29,8 @@ body {
 }
 
 #main__container {
+    background-image: linear-gradient(to right bottom, #37a04a, #6db348, #9dc448, #ced44d, #ffe359);
     display: grid;
-
     height: 500px;
     width: 442px;
     background-color: #ffff;
