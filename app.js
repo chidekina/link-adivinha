@@ -10,6 +10,7 @@ const cloudsDown = document.getElementById('clouds-down');
 const mainThought = document.getElementById('main-thought');
 const firstCircle = document.getElementById('first-circle');
 const secondCircle = document.getElementById('second-circle');
+const mobile = window.matchMedia("(max-width: 476px)")
 
 console.log(chosenNumber)
 number.addEventListener('keypress', (event) => {
@@ -47,10 +48,16 @@ number.addEventListener('keypress', (event) => {
             secondCircle.style.display = 'none';
             talking.style.display = 'none';
 
+            if (mobile.matches) {
+                armLeft.style.top = '-40%';
+                armLeft.style.left = '12%';
+            }
+
         } else if (numberGuess != '' &&
         !yourGuesses.includes(numberGuess) &&
         numberGuess >= 1 &&
-        numberGuess <= 50) {
+        numberGuess <= 50)
+         {
         if (yourGuesses.length <= 3) {
             yourGuesses.push(numberGuess);
             guesses.innerHTML = yourGuesses;
@@ -62,7 +69,9 @@ number.addEventListener('keypress', (event) => {
             rightEye.classList.add('disable');
             rightEyebrow.style.transitionDuration = '500ms';
             link__mouth.style.transitionDuration = '500ms';
+            guesses.style.display = 'block';
             guessingNumber(numberGuess, chosenNumber);
+            
 
 
             if (yourGuesses.length == 2) {
@@ -83,7 +92,7 @@ number.addEventListener('keypress', (event) => {
             yourGuesses.push(numberGuess);
             guesses.innerHTML = yourGuesses;
             number.value = '';
-            link__container_number.innerHTML = `<h1>Suas chances acabaram. <strong><a href='index.html'>Tente Outra vez!</a></strong></h1>`;
+            link__container_number.innerHTML = `<h1>Suas chances acabaram. <strong><a href='index.html'>Tente Outra vez!</a></strong></h1> <h3>O número era o <strong>${chosenNumber}</strong></h3>`;
             number.disabled = true;
             leftEyebrow.style.rotate = '-15deg';
             rightEyebrow.style.rotate = '15deg';

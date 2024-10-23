@@ -4,7 +4,6 @@
 
 :root {
     --main-font: "Roboto", sans-serif;
-    --background-color: rgb(222, 85, 64);
     --text-color: #FFB431;
 }
 
@@ -15,6 +14,7 @@
     text-decoration: none;
 
 }
+
 
 body {
 
@@ -31,21 +31,21 @@ body {
 
 #main__container {
     background-image: linear-gradient(to right top, #37a04a, #6db348, #89b135, #ffe359);
-    height: 500px;
-    width: 442px;
+    height: 31rem;
+    width: 28rem;
     background-color: #ffff;
-    padding: 36px 0px 36px 16px;
+    padding: 2rem 0 2rem 1rem;
     flex-direction: column;
     border-radius: 10%;
 
 }
 
 #link__container {
-    margin-top: 40px;
-    height: 258px;
+    margin-top: 2rem;
+    height: 60%;
     display: grid;
     grid-template-columns: 40% 60%;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 
     & h1 {
         width: 80%;
@@ -60,6 +60,7 @@ body {
 
 #link__container_number {
     & a {
+        margin-top: 1.5rem;
         text-decoration: none;
         color: var(--text-color);
 
@@ -70,7 +71,28 @@ body {
         &:visited {
             color: var(--text-color);
         }
+
     }
+
+    & h3 {
+        margin-top: 0.5rem;
+
+        & strong {
+            color: var(--text-color);
+        }
+    }
+}
+
+#guesses {
+    display: none;
+    width: 40%;
+    height: 30%;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    border-radius: 15%;
+    border: 2px solid var(--clothes-color);
+    color: var(--text-color);
+    background-color: var(--main-color);
 }
 
 #result {
@@ -102,5 +124,44 @@ body {
         color: var(--text-color);
         font-size: 20px;
         font-weight: 800;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+
+    #main__container {
+        height: 26rem;
+        width: 22rem;
+        padding: 1rem 0px 0.5rem 1rem;
+
+
+    }
+
+    #link__container {
+        margin-top: 1rem;
+        height: 60%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-bottom: 1.5rem;
+
+        & h1 {
+            width: 50%;
+            font-weight: 500px;
+            font-size: 1.5rem;
+
+        }
+    }
+
+    #guesses {
+        display: none;
+        font-size: 0.2rem;
+        width: 60%;
+        height: 12%;
+        padding: 0.5rem 0.5rem;
+        text-align: center;
+        border-radius: 15%;
+        border: 2px solid var(--clothes-color);
+        color: var(--text-color);
+        background-color: var(--main-color);
     }
 }
