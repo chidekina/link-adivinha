@@ -18,7 +18,7 @@ number.addEventListener('keypress', (event) => {
 
     if (event.key == 'Enter')
         if (numberGuess == chosenNumber && yourGuesses.length < 5) {
-            link__container_number.innerHTML = `<h1>Parabens! O número <strong>${numberGuess}</strong> esta certo</h1><strong><a href='index.html'>Tente Outra vez!</a></strong>`;
+            link__container_number.innerHTML = `<h1>Parabens! O número <strong>${numberGuess}</strong> esta certo</h1><strong><a href='index.html'>Jogue novamente!</a></strong>`;
             leftEyebrow.style.rotate = '10deg';
             rightEyebrow.style.rotate = '-10deg';
             link__mouth.style.backgroundColor = 'var(--eye-brow-color)';
