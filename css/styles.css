@@ -152,16 +152,40 @@ body {
         }
     }
 
-    #guesses {
-        display: none;
-        font-size: 0.2rem;
-        width: 60%;
-        height: 12%;
-        padding: 0.5rem 0.5rem;
-        text-align: center;
-        border-radius: 15%;
-        border: 2px solid var(--clothes-color);
-        color: var(--text-color);
-        background-color: var(--main-color);
+    #link__container_number {
+
+        & h1 {
+            font-size: 1.5rem;
+            width: 80%;
+        }
+
+        & a {
+            margin-top: 1.5rem;
+            text-decoration: none;
+            color: var(--text-color);
+
+            &:focus {
+                text-decoration: underline;
+            }
+
+            &:visited {
+                color: var(--text-color);
+            }
+
+        }
+
+
+        #guesses {
+            display: none;
+            font-size: 0.2rem;
+            width: 60%;
+            height: 12%;
+            padding: 0.5rem 0.5rem;
+            text-align: center;
+            border-radius: 15%;
+            border: 2px solid var(--clothes-color);
+            color: var(--text-color);
+            background-color: var(--main-color);
+        }
     }
 }
